@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 const SignIn = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-900 bg-opacity-90 bg-[url('../../assets/background-image.jpg')] bg-cover bg-center">
+    <div className="flex items-center justify-center min-h-screen bg-trasparent bg-opacity-90 bg-[url('../../assets/background-image.jpg')] bg-cover bg-center">
       <div className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md mx-4 backdrop-blur-sm bg-opacity-90">
         <h2 className="text-white text-3xl font-bold mb-8 text-center">
           Sign In
@@ -17,7 +17,7 @@ const SignIn = () => {
             <input
               type="email"
               id="email"
-              className="w-full p-3 rounded bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="w-full p-3 rounded bg-black/5 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500"
               placeholder="Enter your email"
               required
             />
@@ -32,7 +32,7 @@ const SignIn = () => {
             <input
               type="password"
               id="password"
-              className="w-full p-3 rounded bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="w-full p-3 rounded bg-black/5 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-red-500"
               placeholder="Enter your password"
               required
             />
