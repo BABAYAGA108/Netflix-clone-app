@@ -16,8 +16,8 @@ interface Movie {
 const movieData: Movie[] = [
   {
     id: 1,
-    title: "Stranger Things",
-    image: "../../assets/movies/stranger-things.jpg",
+    title: "Squid Game",
+    image: "../../assets",
     genre: "Sci-Fi",
     year: 2016,
     rating: "TV-14",
@@ -27,7 +27,7 @@ const movieData: Movie[] = [
   },
   {
     id: 2,
-    title: "The Crown",
+    title: "straw",
     image: "../../assets/movies/the-crown.jpg",
     genre: "Drama",
     year: 2016,
@@ -37,8 +37,8 @@ const movieData: Movie[] = [
     seasons: 5,
   },
   {
-    id: 1,
-    title: "Stranger Things",
+    id: 3,
+    title: "tyler perry's MADEA'S DESTION WEDDINGG",
     image: "../../assets/movies/stranger-things.jpg",
     genre: "Sci-Fi",
     year: 2016,
@@ -48,8 +48,8 @@ const movieData: Movie[] = [
     seasons: 4,
   },
   {
-    id: 1,
-    title: "Stranger Things",
+    id: 4,
+    title: "The sandman",
     image: "../../assets/movies/stranger-things.jpg",
     genre: "Sci-Fi",
     year: 2016,
@@ -59,8 +59,8 @@ const movieData: Movie[] = [
     seasons: 4,
   },
   {
-    id: 1,
-    title: "Stranger Things",
+    id: 5,
+    title: "Brick",
     image: "../../assets/movies/stranger-things.jpg",
     genre: "Sci-Fi",
     year: 2016,
@@ -70,8 +70,8 @@ const movieData: Movie[] = [
     seasons: 4,
   },
   {
-    id: 1,
-    title: "Stranger Things",
+    id: 6,
+    title: "Zia",
     image: "../../assets/movies/stranger-things.jpg",
     genre: "Sci-Fi",
     year: 2016,
@@ -81,8 +81,8 @@ const movieData: Movie[] = [
     seasons: 4,
   },
   {
-    id: 1,
-    title: "Stranger Things",
+    id: 7,
+    title: "Untamed",
     image: "../../assets/movies/stranger-things.jpg",
     genre: "Sci-Fi",
     year: 2016,
@@ -92,8 +92,8 @@ const movieData: Movie[] = [
     seasons: 4,
   },
   {
-    id: 1,
-    title: "Stranger Things",
+    id: 8,
+    title: "JAAT",
     image: "../../assets/movies/stranger-things.jpg",
     genre: "Sci-Fi",
     year: 2016,
@@ -103,8 +103,8 @@ const movieData: Movie[] = [
     seasons: 4,
   },
   {
-    id: 1,
-    title: "Stranger Things",
+    id: 9,
+    title: "KINGS OF JO'BURG",
     image: "../../assets/movies/stranger-things.jpg",
     genre: "Sci-Fi",
     year: 2016,
@@ -114,8 +114,8 @@ const movieData: Movie[] = [
     seasons: 4,
   },
   {
-    id: 1,
-    title: "Stranger Things",
+    id: 10,
+    title: "letters from the past",
     image: "../../assets/movies/stranger-things.jpg",
     genre: "Sci-Fi",
     year: 2016,
@@ -125,8 +125,8 @@ const movieData: Movie[] = [
     seasons: 4,
   },
   {
-    id: 1,
-    title: "Stranger Things",
+    id: 11,
+    title: "How to kill a monkey",
     image: "../../assets/movies/stranger-things.jpg",
     genre: "Sci-Fi",
     year: 2016,
@@ -135,39 +135,7 @@ const movieData: Movie[] = [
       "When a young boy vanishes, a small town uncovers a mystery involving secret experiments.",
     seasons: 4,
   },
-  {
-    id: 1,
-    title: "Stranger Things",
-    image: "../../assets/movies/stranger-things.jpg",
-    genre: "Sci-Fi",
-    year: 2016,
-    rating: "TV-14",
-    description:
-      "When a young boy vanishes, a small town uncovers a mystery involving secret experiments.",
-    seasons: 4,
-  },
-  {
-    id: 1,
-    title: "Stranger Things",
-    image: "../../assets/movies/stranger-things.jpg",
-    genre: "Sci-Fi",
-    year: 2016,
-    rating: "TV-14",
-    description:
-      "When a young boy vanishes, a small town uncovers a mystery involving secret experiments.",
-    seasons: 4,
-  },
-  {
-    id: 1,
-    title: "Stranger Things",
-    image: "../../assets/movies/stranger-things.jpg",
-    genre: "Sci-Fi",
-    year: 2016,
-    rating: "TV-14",
-    description:
-      "When a young boy vanishes, a small town uncovers a mystery involving secret experiments.",
-    seasons: 4,
-  },
+
 ];
 
 const Hero = () => {
@@ -223,7 +191,7 @@ const Hero = () => {
         transition={{ duration: 0.8 }}
       >
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Welcome to Netflix Clone
+          Welcome to Netflix 
         </h1>
         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
           Watch your favorite movies and TV shows anytime, anywhere.
@@ -272,11 +240,11 @@ const Hero = () => {
             </svg>
           </button>
 
-          <button
+            <button
             onClick={nextSlide}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full mr-2"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-20 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full mr-2 transition-shadow duration-700"
             aria-label="Next movies"
-          >
+            >
             <svg
               className="w-6 h-6"
               fill="none"
@@ -284,13 +252,13 @@ const Hero = () => {
               viewBox="0 0 24 24"
             >
               <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 5l7 7-7 7"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
               />
             </svg>
-          </button>
+            </button>
 
           {/* Movie Grid */}
           <motion.div
